@@ -2,18 +2,20 @@ let APIs = false;
 let Annotations = false;
 let Blocks = APIs && Annotations
 
-basic.showLeds(`
-    . . . . .
-    . # . # .
-    . . . . .
-    # . . . #
-    . # # # .
-    `);
+function showWink() {
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        # . . . #
+        . # # # .
+        `)
+    basic.showLeds(`
+        . . . . .
+        . # . . .
+        . . . . .
+        # . . . #
+        . # # # .
+        `)
+}
 
-basic.showLeds(`
-    . . . . .
-    . # . . .
-    . . . . .
-    # . . . #
-    . # # # .
-    `);    
