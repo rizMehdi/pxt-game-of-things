@@ -1,25 +1,9 @@
-/**
- * Provides access to basic micro:bit functionality.
- */
-//% color=190 weight=100 icon="\uf1ec" block="Basic Blocks"
-namespace basic {
-    ...
-}
-
-//% block
-export function function showWink() {
-    basic.showLeds(`
-        . . . . .
-        . # . # .
-        . . . . .
-        # . . . #
-        . # # # .
-        `)
-    basic.showLeds(`
-        . . . . .
-        . # . . .
-        . . . . .
-        # . . . #
-        . # # # .
-        `)
+namespace fun {
+    /**
+    * Computes the famous Fibonacci number sequence!
+    */
+    //% block
+    export function fib(value: number): number {
+        return value <= 1 ? value : fib(value - 1) + fib(value - 2);
+    }
 }

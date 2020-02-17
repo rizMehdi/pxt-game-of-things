@@ -4,8 +4,7 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "pxt-game-of-things": "workspace:d4aaecdf-7759-4dd6-b6cb-601a565566a4"
+        "radio": "*"
     },
     "files": [
         "README.md",
