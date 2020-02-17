@@ -1,8 +1,9 @@
-let APIs = false;
-let Annotations = false;
-let Blocks = APIs && Annotations
+/**
+ * shows wink icon
+ */
+//% color=190 weight=100 icon="\uf1ec" block="Basic Blocks"
+namespace wink {
 
-function showWink() {
     basic.showLeds(`
         . . . . .
         . # . # .
@@ -18,4 +19,3 @@ function showWink() {
         . # # # .
         `)
 }
-
