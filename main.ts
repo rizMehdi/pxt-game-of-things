@@ -1,4 +1,4 @@
-namespace fun {
+namespace skybit {
     /**
      * Provides access to basic micro:bit functionality.
      */
@@ -12,20 +12,20 @@ namespace fun {
         return value * value;
     }
     //% block
-    export function signin_tweet(uname: string, pass: number): void {
+    export function tweetbitSign_in(uname: string, pass: number): void {
         radio.sendValue(uname, pass)
     }
     //% block
-    export function signin_logger(username: string, pin: number): void {
+    export function logbitSign_in(username: string, pin: number): void {
         radio.sendValue(username, pin)
     }
     //% block
-    export function post_log(sensor_name: string, value: number): void {
+    export function logbitPost(sensor_name: string, value: number): void {
         radio.sendValue("&" + sensor_name, value)
     }
     //% block
-    export function post_tweet(tweetText: string): void {
-        radio.sendString("%" + tweetText)
+    export function tweetbitPost_17chars(tweetText: string): void {
+        radio.sendString("#" + tweetText)
     }
 
 
