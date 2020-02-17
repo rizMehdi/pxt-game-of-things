@@ -7,9 +7,7 @@ namespace fun {
     export function fib(value: number): number {
         return value <= 1 ? value : fib(value - 1) + fib(value - 2);
     }
-    export function fib2(value: number): number 
-    {
-        value = fib(value - 1) + fib(value - 2);
-        return value
-    }
+    export function sq(value: number): number {
+        return value <= 1 ? value : value*value
+     }
 }
