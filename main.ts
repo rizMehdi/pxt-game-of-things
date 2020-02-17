@@ -8,6 +8,6 @@ namespace fun {
         return value <= 1 ? value : fib(value - 1) + fib(value - 2);
     }
     export function sq(value: number): number {
-        return value <= 1 ? value : value*value
-     }
+        return value * value
+    }
 }
